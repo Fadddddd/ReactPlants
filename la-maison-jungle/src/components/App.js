@@ -1,11 +1,13 @@
-import Banner from "./Banner";
-import Cart from "./Cart";
+import BannerPlop from "./BannerPlop";
+// import Cart from './Cart'
+import ShoppingList from "./ShoppingList";
 
 function App() {
   return (
     <div>
-      <Banner />
-      <Cart />
+      <BannerPlop />
+      {/* <Cart /> */}
+      <ShoppingList />
     </div>
   );
 }
