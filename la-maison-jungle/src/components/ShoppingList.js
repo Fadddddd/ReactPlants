@@ -1,11 +1,12 @@
-import { PlantList } from "../datas/PlantList";
+import { plantList } from "../datas/plantList";
 
 function ShoppingList() {
-  const categories = PlantList.reduce(
+  const categories = plantList.reduce(
     (acc, plant) =>
       acc.includes(plant.category) ? acc : acc.concat(plant.category),
     []
   );
+
   return (
     <div>
       <ul>
@@ -14,8 +15,10 @@ function ShoppingList() {
         ))}
       </ul>
       <ul>
-        {PlantList.map((plant) => (
-          <li key={plant.id}>{plant.name}</li>
+        {plantList.map((plant) => (
+          <li key={plant.id}>
+            {plant.name} {plant.isBestSale && <span>🔥</span>}
+          </li>
         ))}
       </ul>
     </div>
