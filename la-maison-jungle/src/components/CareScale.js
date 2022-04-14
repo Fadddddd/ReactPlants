@@ -21,4 +21,6 @@ function CareScale({ scaleValue, careType }) {
   );
 }
 
+
+
 export default CareScale;
