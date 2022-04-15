@@ -7,9 +7,12 @@ function Footer() {
   function handleInput(e) {
     setInputValue(e.target.value);
   }
+
   function handleBlur() {
     if (!inputValue.includes("@")) {
-      alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide");
+      alert(
+        "Attention, il n'y a pas d'@, ceci n'est pas une adresse valide 😥"
+      );
     }
   }
 
