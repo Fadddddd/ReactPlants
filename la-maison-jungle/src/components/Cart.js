@@ -7,6 +7,7 @@ function Cart({ cart, updateCart }) {
     (acc, plantType) => acc + plantType.amount * plantType.price,
     0
   );
+  alert(`J'aurai ${total}€ à payer 💸`);
   return isOpen ? (
     <div className="lmj-cart">
       <button
